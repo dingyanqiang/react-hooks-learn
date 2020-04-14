@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    //"strict": true,
+    // 解析非相对模块名的基准目录
+    "baseUrl": ".",
+    // 要包含的类型声明文件名列表
+    "paths": {
+      "@/*": ["./src/*"],
+      // "axios": ["node_modules/axios/index.d.ts"],
+      // "query-string": ["node_modules/query-string/index.d.ts"],
+    },
+    "lib": ["esnext", "dom"],
+    // 用于debug 生成js和map文件
+    "sourceMap": true,
+    // 模块化方案
+    "moduleResolution": "node",
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "noImplicitAny": false
+  },
+  "include": ["./src/**/*"]
+  // "exclude": [
+  //   "node_modules",
+  //   "build",
+  //   "dist"
+  // ]
+}
